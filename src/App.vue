@@ -1,30 +1,43 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <!-- <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+    </div> -->
+    <router-view />
   </div>
-  <router-view/>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    @apply font-manrope;
 }
 
-#nav {
-  padding: 30px;
+
+
+@media only screen and (min-device-width: 960px) {
+
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D55659; 
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ad4747; 
+}
+
 }
 </style>
