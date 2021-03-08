@@ -31,42 +31,5 @@
 </template>
 
 <style>
-    .image{
-        @apply hidden lg:block mr-8 h-48 xl:h-64 2xl:h-96 rounded-full my-auto border-4 border-solid border-white;
-    }
-
-    .title{
-        @apply text-white text-4xxl 2xl:text-6xl leading-snug w-3/4;
-    }
-
-    .subtitle {
-        @apply my-4 text-gray-300 text-2xxl 2xl:text-4xl font-light;
-    }
-
-    .subtitle-link {
-        @apply underline;
-    }
-
-    .links {
-        @apply my-6 w-full flex flex-row;
-    }
-
-    .links .link {
-        @apply mr-4 w-14;
-    }
-
-    .contact{
-        @apply text-lg 2xl:text-xl mt-2 w-full flex flex-col items-center text-gray-400;
-    }
-
-    .contact .discord {
-        @apply w-full flex flex-row;
-    }
-
-    .contact .discord .icon {
-        @apply mr-4 w-6;
-    }
-    .contact .email {
-        @apply mb-2 w-full text-gray-400;
-    }
+    
 </style>

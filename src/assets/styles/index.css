@@ -3,3 +3,86 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.tooltip {
+    @apply invisible absolute text-base rounded shadow-lg p-1 bg-gray-100 bg-opacity-50 text-gray-800 -mt-8;
+}
+  
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+.image{
+    @apply hidden lg:block mr-8 h-48 xl:h-64 2xl:h-96 rounded-full my-auto border-4 border-solid border-white;
+}
+
+.title{
+    @apply text-white text-4xxl 2xl:text-6xl leading-snug w-3/4;
+}
+
+.subtitle {
+    @apply my-4 text-gray-300 text-2xxl 2xl:text-4xl font-light;
+}
+
+.subtitle-link {
+    @apply underline cursor-pointer;
+}
+
+.links {
+    @apply my-6 w-full flex flex-row;
+}
+
+.links .link {
+    @apply mr-4 w-14;
+}
+
+.contact{
+    @apply text-lg 2xl:text-xl mt-2 w-full flex flex-col items-center text-gray-400;
+}
+
+.contact .discord {
+    @apply w-full flex flex-row;
+}
+
+.contact .discord .icon {
+    @apply mr-4 w-6;
+}
+.contact .email {
+    @apply mb-2 w-full text-gray-400;
+}
+
+.project-image {
+    @apply absolute w-full rounded-t-lg ;
+}
+
+.project-title {
+    @apply rounded-md shadow-md inline-block font-bold text-3xl mb-2 mr-2 px-4 py-2 bg-theme bg-opacity-40;
+}
+
+.project-desc {
+    @apply rounded-md shadow-md text-gray-200 font-semibold text-xl mb-2 px-4 py-2 bg-theme bg-opacity-40;
+}
+
+.project-desc > a {
+    @apply text-red-400
+}
+
+.project-icon {
+    @apply mr-2;
+}
+
+.project-icon:hover {
+    @apply text-theme;
+}
+
+.project-container {
+    @apply text-white pt-64 px-8 pb-8;
+}
+
+.project-box {
+    @apply min-h-full bg-cover bg-center bg-no-repeat rounded-lg transform duration-300
+}
+
+.project-box:hover {
+    @apply scale-105;
+}
