@@ -14,7 +14,7 @@
                     <a href="https://www.linkedin.com/in/egidiufarcas/" target="_blank">
                     <img class="link" src="@/assets/icons/linkedin.svg" alt="linkedin icon"></a>
                     
-                    <a href="@/assets/cv.pdf" download="egidiu-farcas-resume.pdf">
+                    <a href="/cv.pdf" target="_blank">
                     <img class="link" src="@/assets/icons/cv.svg" alt="cv icon"></a>
                 </div>
                 <div class="contact">
